@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D7E2EB"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tx_PN"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40sp"
+        android:layout_marginTop="100dp"
+        android:text="Plate number"
+        android:textSize="18dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/etx_PN"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:hint="7303 vdx"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="170sp"/>
+
+    <TextView
+        android:id="@+id/tx_color"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40sp"
+        android:layout_marginTop="135dp"
+        android:text="Color"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etx_color"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="170sp"
+        android:layout_marginTop="123dp"
+        android:ems="10"
+        android:hint="Black"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/tx_make"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40sp"
+        android:layout_marginTop="170dp"
+        android:text="Make"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/etx_make"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:hint="Ford"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="170sp"/>
+
+    <Button
+        android:id="@+id/insert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insert"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="190dp"
+        android:layout_below="@+id/etx_make"
+        android:backgroundTint="#2f698f"
+        android:backgroundTintMode="add"
+        android:foregroundTintMode="screen"/>
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etx_make"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="70dp"
+        android:text="Delete"
+        android:backgroundTint="#2f698f"
+        android:backgroundTintMode="add"
+        android:foregroundTintMode="screen"/>
+
+    <TextView
+        android:id="@+id/Number_of_cars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="380dp"
+        android:text="Number of cars:"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/numbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="380dp"
+        android:hint="0"
+        android:text="" />
+
+    <Button
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Number_of_cars"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="30dp"
+        android:text="View data"
+        android:backgroundTint="#2f698f"
+        android:backgroundTintMode="add"
+        android:foregroundTintMode="screen"/>
+
+    <TextView
+        android:id="@+id/vieew"
+        android:layout_width="286dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="35dp"
+        android:background="#bf9db0"
+        android:text="  Plaese fill out the following form"
+        android:textSize="18dp"
+        />
+
+    <TextView
+        android:id="@+id/note"
+        android:layout_width="310dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="215dp"
+        android:text=" If you want insert car fill all form,if you want   delete fill only plate number"
+        android:textColor="#fa0511"
+        android:textSize="14dp"
+        android:background="#e6e9eb"/>
+</RelativeLayout>
